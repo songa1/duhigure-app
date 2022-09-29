@@ -10,6 +10,10 @@ tailwind.config = {
             fontFamily: {
                 sans: ['Raleway', 'sans-serif']
             },
+            backgroundImage: {
+                'hero-pattern': "url('assets/img/knot.png')",
+                'footer-texture': "url('/img/footer-texture.png')",
+            }
         }
     }
 }

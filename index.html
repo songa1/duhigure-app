@@ -9,9 +9,26 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body>
-    <h1 class="text-3xl font-bold main underline text-primary">
-        Hello world!
-    </h1>
+    <div class="w-full h-screen">
+        <div class="top-main bg-black w-full text-white h-screen p-10 flex flex-col gap-20 bg-hero-pattern bg-no-repeat bg-cover">
+            <div class="flex items-center justify-between">
+                <h1>DUHI<span>GURE</span></h1>
+                <div class="flex items-center gap-5">
+                    <button class="px-3 py-1 bg-primary rounded">LOGIN</button>
+                    <button class="px-3 py-1 bg-secondary rounded">ADD FAMILY</button>
+                </div>
+            </div>
+            <div class="hero flex items-center justify-around gap-10">
+                <div class="flex-1">
+                    <h1 class="font-bold text-2xl py-5">Family goals Achieved together</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, natus esse obcaecati cupiditate veritatis necessitatibus aliquam suscipit eligendi exercitationem accusantium! Non explicabo ut quas similique numquam aliquid cumque inventore culpa?</p>
+                </div>
+                <div class="flex-1">
+                    <img src="./assets/img/family-bg.png" alt="Family background" class="shadow rounded max-w-full h-auto align-middle border-none">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/tailwind.js"></script>
 </body>
 </html>
