@@ -5,7 +5,8 @@ tailwind.config = {
             colors: {
                 primary: '#395B64',
                 secondary: '#2C3333',
-                other: '#A5C9CA'
+                other: '#A5C9CA',
+                bg: 'aliceblue'
             },
             fontFamily: {
                 sans: ['Raleway', 'sans-serif']
