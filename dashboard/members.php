@@ -42,50 +42,19 @@
                 </div>
                 
                 <div class="w-full items-center flex flex-col gap-4 h-full scroll px-4 py-auto">
+                    
                     <div class="flex items-center p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
                         <img src="../assets/img/user.jpg" alt="User" class="w-20 h-20 rounded-full">
                         <div class="mdata">
-                            <a href="../i.php?id=<?php echo $row['survey_slug'] ?>"><?php echo "gggg"; ?></a>
-                            <p>Created on <?php echo "12 JJ100"; ?></p>
+                            <a href="../i.php?id=<?php echo $row['survey_slug'] ?>" class="font-bold"><?php echo "gggg"; ?></a>
+                            <p class="text-xs">Created on <?php echo "12 JJ100"; ?></p>
                             <div class="actions" style="display: flex;align-items: center;">
                                 <a style="font-size: xx-small; color: green; padding: 5px;" href="answers.php?question=<?php echo "jdjjd"; ?>">Answers</a>
                                     <a style="font-size: xx-small; color: red; padding: 5px; cursor: pointer;" href="../php/delete.php?id=<?php echo "eeee"; ?>">Delete</a>
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
-                        <img src="../assets/img/user.jpg" alt="User" class="w-20 h-20 rounded-full">
-                        <div class="mdata">
-                            <a href="../i.php?id=<?php echo $row['survey_slug'] ?>"><?php echo "gggg"; ?></a>
-                            <p>Created on <?php echo "12 JJ100"; ?></p>
-                            <div class="actions" style="display: flex;align-items: center;">
-                                <a style="font-size: xx-small; color: green; padding: 5px;" href="answers.php?question=<?php echo "jdjjd"; ?>">Answers</a>
-                                    <a style="font-size: xx-small; color: red; padding: 5px; cursor: pointer;" href="../php/delete.php?id=<?php echo "eeee"; ?>">Delete</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
-                        <img src="../assets/img/user.jpg" alt="User" class="w-20 h-20 rounded-full">
-                        <div class="mdata">
-                            <a href="../i.php?id=<?php echo $row['survey_slug'] ?>"><?php echo "gggg"; ?></a>
-                            <p>Created on <?php echo "12 JJ100"; ?></p>
-                            <div class="actions" style="display: flex;align-items: center;">
-                                <a style="font-size: xx-small; color: green; padding: 5px;" href="answers.php?question=<?php echo "jdjjd"; ?>">Answers</a>
-                                    <a style="font-size: xx-small; color: red; padding: 5px; cursor: pointer;" href="../php/delete.php?id=<?php echo "eeee"; ?>">Delete</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
-                        <img src="../assets/img/user.jpg" alt="User" class="w-20 h-20 rounded-full">
-                        <div class="mdata">
-                            <a href="../i.php?id=<?php echo $row['survey_slug'] ?>"><?php echo "gggg"; ?></a>
-                            <p>Created on <?php echo "12 JJ100"; ?></p>
-                            <div class="actions" style="display: flex;align-items: center;">
-                                <a style="font-size: xx-small; color: green; padding: 5px;" href="answers.php?question=<?php echo "jdjjd"; ?>">Answers</a>
-                                    <a style="font-size: xx-small; color: red; padding: 5px; cursor: pointer;" href="../php/delete.php?id=<?php echo "eeee"; ?>">Delete</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
