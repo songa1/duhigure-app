@@ -31,7 +31,7 @@
 <body class="bg-bg">
     <div class="flex flex-col items-center gap-1 h-1/10 py-0 px-4 h-screen">
         <section class="flex items-center justify-between w-full p-4 shadow h-30">
-            <h2 class="m-0 font-bold text-2xl text-primary">AskPublic</h2>
+            <h2 class="m-0 font-bold text-2xl text-primary">Duhigure</h2>
             <div class="flex gap-2">
                 <button class="bg-primary text-white px-4 py-1 rounded">Notifications</button>
                 <a href="#umuhigo-mushya" class="bg-secondary text-white px-4 py-1 rounded">Umuhigo mushya</a>

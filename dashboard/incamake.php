@@ -31,7 +31,7 @@
 <body class="bg-bg">
     <div class="flex flex-col items-center gap-1 h-1/10 py-0 px-4 h-screen">
         <section class="flex items-center justify-between w-full p-4 shadow h-30">
-            <h2 class="m-0 font-bold text-2xl text-primary">AskPublic</h2>
+            <h2 class="m-0 font-bold text-2xl text-primary">Duhigure</h2>
             <div class="flex gap-2">
                 <button class="bg-primary text-white px-4 py-1 rounded">Notifications</button>
                 <a href="#umunyamuryango-mushya" class="bg-secondary text-white px-4 py-1 rounded">Umunyamuryango mushya</a>
@@ -64,9 +64,14 @@
                 
                 <!-- We render all members here -->
                 <div class="w-full items-center flex flex-col gap-4 h-full scroll px-4 py-auto">
-                    
-                <table class="table w-full">
-    <!-- head -->
+
+
+                    <!-- <div class="w-1/3 flex items-center shadow-lg ">
+                        <h1 class="bg-primary text-white h-full p-10">Imihigo</h1>
+                        <p class="bg-white text-white p-10 text-primary">10</p>
+                    </div> -->
+                
+                <!-- <table class="table w-full">
                     <thead class="bg-primary">
                         <tr >
                             <th></th>
@@ -76,7 +81,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <!-- row 1 -->
                     <tr>
                         <th>1</th>
                         <td>Cy Ganderton</td>
@@ -84,7 +88,7 @@
                         <td>Blue</td>
                     </tr>
                     </tbody>
-                </table>
+                </table> -->
 
                 </div>
             </div>

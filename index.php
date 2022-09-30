@@ -16,7 +16,7 @@
     <div>
         <div class="h-screen bg-hero bg-no-repeat bg-cover">
             <section class="flex items-center justify-between w-full p-4 shadow h-30">
-                <h2 class="m-0 font-bold text-2xl text-primary">AskPublic</h2>
+                <h2 class="m-0 font-bold text-2xl text-primary">Duhigure</h2>
                 <div class="flex gap-2">
                     <a href="#kwinjira" class="bg-primary text-white px-4 py-1 rounded hover:bg-secondary">Injira</a>
                     <a href="#umuryango-mushya" class="bg-secondary text-white px-4 py-1 rounded hover:bg-primary">Ongera Umuryango</a>
