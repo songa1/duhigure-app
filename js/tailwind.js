@@ -12,8 +12,7 @@ tailwind.config = {
                 sans: ['Raleway', 'sans-serif']
             },
             backgroundImage: {
-                'hero-pattern': "url('assets/img/knot.png')",
-                'footer-texture': "url('/img/footer-texture.png')",
+                'hero': "url('assets/img/bbb.png')",
             }
         }
     }
