@@ -47,8 +47,8 @@
                     </div>
                 </div>
                 <div class="flex flex-col p-4">
-                    <a href="./incamake.php" class="px-0 py-2 font-bold text-primary">Incamake</a>
-                    <a href="./abanyamuryango.php" class="px-0 py-2 font-bold text-secondary">Abanyamuryango</a>
+                    <a href="./incamake.php" class="px-0 py-2 font-bold text-secondary">Incamake</a>
+                    <a href="./abanyamuryango.php" class="px-0 py-2 font-bold text-primary">Abanyamuryango</a>
                     <a href="./imihigo.php" class="px-0 py-2 font-bold text-primary">Imihigo</a>
                     <a href="#" class="px-0 py-2 font-bold text-primary">Imiterere</a>
                     <a class="bg-secondary text-white px-4 py-1 rounded" href="../index.php#kwinjira">Gusohoka</a>
@@ -58,40 +58,33 @@
 
                 <!-- Title -->
                 <div class="flex items-center justify-between px-auto py-4">
-                    <h2 class="font-bold text-primary text-2xl">Abanyamuryango</h2>
+                    <h2 class="font-bold text-primary text-2xl">Incamake z'imihigo</h2>
                     <input type="text" placeholder="Search..." class="px-2 py-1 border-0 border-b-2 border-b-primary bg-transparent outline-0 text-primary">
                 </div>
                 
                 <!-- We render all members here -->
                 <div class="w-full items-center flex flex-col gap-4 h-full scroll px-4 py-auto">
                     
-                    <!-- We render one member here -->
-                    <?php
-
-                        $d = "SELECT * FROM members WHERE member_family='$famid'";
-                        $resultse = $conn->query($d);
-                        if ($resultse->num_rows > 0) {
-                            while($row = $resultse->fetch_assoc()) {
-                                ?>
-                                    <div class="flex items-center p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
-                                        <img src="<?php echo $row['member_picture'] ?>" alt="User" class="w-20 h-20 rounded-full">
-                                        <div class="mdata">
-                                            <a href="#" class="font-bold"><?php echo $row['member_name']; ?></a>
-                                            <p class="text-xs">Created on <?php echo $row['created_at']; ?></p>
-                                            <div class="actions" style="display: flex;align-items: center;">
-                                                <a class="text-xs bg-primary text-white rounded-sm px-2"><?php echo $row['member_role'] ?></a>
-                                                <a style="font-size: xx-small; color: red; padding: 5px; cursor: pointer;" href="./siba-umunyamuryango.php?id=<?php echo $row['member_id']; ?>">Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php
-                            }
-                        }else {
-                            echo "<h1 class='font-bold'>Nta banyamuryango, shyiramo abanyamuryango</h1>";
-                        }
-                    ?>
-                    
-                    
+                <table class="table w-full">
+    <!-- head -->
+                    <thead class="bg-primary">
+                        <tr >
+                            <th></th>
+                            <th>Abanyamuryango</th>
+                            <th>Imihigo</th>
+                            <th>Aho igeze</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                    </tr>
+                    </tbody>
+                </table>
 
                 </div>
             </div>

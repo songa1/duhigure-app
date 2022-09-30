@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col p-4">
-                    <a href="#" class="px-0 py-2 font-bold text-primary">Report</a>
+                    <a href="./incamake.php" class="px-0 py-2 font-bold text-primary">Incamake</a>
                     <a href="./abanyamuryango.php" class="px-0 py-2 font-bold text-primary">Abanyamuryango</a>
                     <a href="./imihigo.php" class="px-0 py-2 font-bold text-secondary">Imihigo</a>
                     <a href="#" class="px-0 py-2 font-bold text-primary">Imiterere</a>
@@ -73,18 +73,21 @@
 
                         $resulto = mysqli_query($conn, $d);  
                         $row = mysqli_fetch_array($resulto, MYSQLI_ASSOC); 
+                        $usid = $row['member_assigned'];
                         
                         if ($row) {
                                 ?>
                                     <div class="flex items-center flex-col p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
-                                        <p class="text-xs">Created on <?php echo $row['created_at']; ?></p>
+                                        <div class="flex justify-between items-center">
+                                            <p class="text-xs">Created on <?php echo $row['created_at']; ?></p>
+                                        </div>
                                         <form class="mdata w-full flex flex-col gap-1" method="POST">
                                             
                                             <input name="up_title" class="input input-bordered w-full" value="<?php echo $row['title']; ?>" />
-                                            <textarea name="" class="input input-bordered w-full h-24"><?php echo $row['description'] ?></textarea>
+                                            <textarea name="up_desc" class="input input-bordered w-full h-24"><?php echo $row['description'] ?></textarea>
                                             <div class="flex items-center justify-between">
                                                 <a class="text-xs bg-red-500 text-white rounded px-4 py-2"><?php echo "Delete"?></a>
-                                                <input type="submit" class="text-xs bg-primary text-white rounded px-4 py-2" value="Update" name="update_btn"/>
+                                                <input type="submit" class="text-xs bg-primary text-white rounded px-4 py-2" value="Hindura" name="update_btn"/>
                                             </div>
                                         </form>
                                         
@@ -105,6 +108,16 @@
 
         if(isset($_POST['update_btn'])){
             $updated_title = $_POST['up_title'];
+            $updated_desc = $_POST['up_desc'];
+
+            $j = "UPDATE imihigo SET title='$updated_title',description='$updated_desc' WHERE id='$uid' ";
+            if ($conn->query($j) === TRUE) {
+                echo "<script>alert('Umuhigo wahinduwe neza!')</script>";
+                echo "<script>window.location.href = './imihigo.php'</script>";
+            }else{
+                echo "<script>alert('Guhindura umuhigo ntibyakunze!')</script>";
+                echo $conn->error;
+            }
         }
 
 

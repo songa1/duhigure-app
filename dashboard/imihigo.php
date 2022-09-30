@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col p-4">
-                    <a href="#" class="px-0 py-2 font-bold text-primary">Report</a>
+                    <a href="./incamake.php" class="px-0 py-2 font-bold text-primary">Incamake</a>
                     <a href="./abanyamuryango.php" class="px-0 py-2 font-bold text-primary">Abanyamuryango</a>
                     <a href="./imihigo.php" class="px-0 py-2 font-bold text-secondary">Imihigo</a>
                     <a href="#" class="px-0 py-2 font-bold text-primary">Imiterere</a>
