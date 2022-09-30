@@ -67,26 +67,31 @@
                     
                     <!-- We render one member here -->
                     <?php
+                        $uid = $_GET['id'];
 
-                        $d = "SELECT * FROM imihigo WHERE family='$famid'";
-                        $resultsu = $conn->query($d);
-                        if ($resultsu->num_rows > 0) {
-                            while($row = $resultsu->fetch_assoc()) {
+                        $d = "SELECT * FROM imihigo WHERE id='$uid'";
+
+                        $resulto = mysqli_query($conn, $d);  
+                        $row = mysqli_fetch_array($resulto, MYSQLI_ASSOC); 
+                        
+                        if ($row) {
                                 ?>
-                                    <div class="flex items-center p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
-                                        <div class="mdata">
-                                            <a href="./umuhigo.php?id=<?php echo $row['id'] ?>" class="font-bold"><?php echo $row['title']; ?></a>
-                                            <p class="text-xs">Created on <?php echo $row['created_at']; ?></p>
-                                            <div class="actions" style="display: flex;align-items: center;">
-                                                <a class="text-xs bg-primary text-white rounded-sm px-2"><?php echo $row['progress'] ?></a>
-                                                <a style="font-size: xx-small; color: red; padding: 5px; cursor: pointer;" href="./siba-umuhigo.php?id=<?php echo $row['id']; ?>">Delete</a>
+                                    <div class="flex items-center flex-col p-2 shadow-inner rounded gap-2 w-1/2 hover:shadow">
+                                        <p class="text-xs">Created on <?php echo $row['created_at']; ?></p>
+                                        <form class="mdata w-full flex flex-col gap-1" method="POST">
+                                            
+                                            <input name="up_title" class="input input-bordered w-full" value="<?php echo $row['title']; ?>" />
+                                            <textarea name="" class="input input-bordered w-full h-24"><?php echo $row['description'] ?></textarea>
+                                            <div class="flex items-center justify-between">
+                                                <a class="text-xs bg-red-500 text-white rounded px-4 py-2"><?php echo "Delete"?></a>
+                                                <input type="submit" class="text-xs bg-primary text-white rounded px-4 py-2" value="Update" name="update_btn"/>
                                             </div>
-                                        </div>
+                                        </form>
+                                        
                                     </div>
                                 <?php
-                            }
                         }else {
-                            echo "<h1 class='font-bold'>Nta mihigo, shyiramo imihigo</h1>";
+                            echo "<h1 class='font-bold'>Nta makuru y'umuhigo ahari!</h1>";
                         }
                     ?>
                     
@@ -96,7 +101,14 @@
             </div>
         </section>
     </div>
+    <?php
 
+        if(isset($_POST['update_btn'])){
+            $updated_title = $_POST['up_title'];
+        }
+
+
+    ?>
     <div class="modal" id="umuhigo-mushya">
         <form class="modal-box flex items-center flex-col gap-4" method="POST">
             <h3 class="font-bold text-lg">Ongera Umuhigo mushya!</h3>

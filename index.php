@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DUHIGURE MU MURYANGO</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
-    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div>
