@@ -3,3 +3,6 @@
 @layer utilities {
     
 }
+body {
+    background-color: aliceblue;
+}

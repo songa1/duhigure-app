@@ -12,7 +12,7 @@ tailwind.config = {
                 sans: ['Raleway', 'sans-serif']
             },
             backgroundImage: {
-                'hero': "url('assets/img/bbb.png')",
+                'hero-pattern': "url('assets/img/bbb.png')",
             }
         }
     }
